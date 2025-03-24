@@ -7,4 +7,10 @@ document.addEventListener('DOMContentLoaded', function(){
         TamanhoAtualFonte +=0.1;
         document.body.style.fontSize = `${TamanhoAtualFonte}rem`
     })
+    const DiminuiFonteBotao = document.getElementById('aumentar-fonte');
+
+    DiminuiFonteBotao.addEventListener('click', function(){
+        TamanhoAtualFonte -=0.1;
+        document.body.style.fontSize = `${TamanhoAtualFonte}rem`
+    })
 })
